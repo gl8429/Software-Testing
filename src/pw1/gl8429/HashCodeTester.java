@@ -42,7 +42,7 @@ public class HashCodeTester {
     @Test public void t4() {
     	Object x = new Object();
     	C y = new C(0);
-    	if (x.equals(y)){
+    	if (y.equals(x)){
     		assertTrue(x.hashCode() == y.hashCode());
     	}
 }
@@ -56,7 +56,7 @@ public class HashCodeTester {
     @Test public void t6() {
     	Object x = new Object();
     	D y = new D(0, 1);
-    	if (x.equals(y)){
+    	if (y.equals(x)){
     		assertTrue(x.hashCode() == y.hashCode());
     	}
 }
@@ -70,7 +70,7 @@ public class HashCodeTester {
     @Test public void t8() {
     	C x = new C(0);
     	D y = new D(0, 1);
-    	if (x.equals(y)){
+    	if (y.equals(x)){
     		assertTrue(x.hashCode() == y.hashCode());
     	}
 }
