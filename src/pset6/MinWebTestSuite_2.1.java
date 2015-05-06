@@ -20,9 +20,14 @@ public class MinWebTestSuite {
 	@BeforeClass public static void setup()
 	{
 		wd = new FirefoxDriver();
-		wd.get("file:///Users/Lucifer/Documents/Development/workspace/software_testing/src/pset6/min.html");
+		wd.get("file:///Users/Lucifer/Documents/Development/workspace/software_testing/src/pset6/minandmax.html");
 	}
 
+	//I run 128 test cases and 27 failures
+	
+	//Comparison Failure
+	//Expected: min(-1, -1, -1) = -1
+	//Actual: max(-1, -1, -1) = -1
 	@Test public void t0() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -51,6 +56,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, -1, 0) = -1
+	//Actual: max(-1, -1, 0) = 0
 	@Test public void t2() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -79,6 +87,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, -1, 1) = -1
+	//Actual: max(-1, -1, 1) = 1
 	@Test public void t4() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -135,6 +146,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, 0, -1) = -1
+	//Actual: max(-1, 0, -1) = 0
 	@Test public void t8() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -163,6 +177,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, 0, 0) = -1
+	//Actual: max(-1, 0, 0) = 0
 	@Test public void t10() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -191,6 +208,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, 0, 1) = -1
+	//Actual: max(-1, 0, 1) = 1
 	@Test public void t12() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -247,6 +267,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, 1, -1) = -1
+	//Actual: max(-1, 1, -1) = 1
 	@Test public void t16() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -275,6 +298,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, 1, 0) = -1
+	//Actual: max(-1, 1, 0) = 1
 	@Test public void t18() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -303,6 +329,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(-1, 1, 1) = -1
+	//Actual: max(-1, 1, 1) = 1
 	@Test public void t20() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-1");
@@ -471,6 +500,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, -1, -1) = -1
+	//Actual: max(0, -1, -1) = 0
 	@Test public void t32() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -499,6 +531,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, -1, 0) = -1
+	//Actual: max(0, -1, 0) = 0
 	@Test public void t34() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -527,6 +562,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, -1, 1) = -1
+	//Actual: max(0, -1, 1) = 1
 	@Test public void t36() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -583,6 +621,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, 0, -1) = -1
+	//Actual: max(0, 0, -1) = 0
 	@Test public void t40() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -611,6 +652,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, 0, 0) = 0
+	//Actual: max(0, 0, 0) = 0
 	@Test public void t42() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -639,6 +683,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, 0, 1) = 0
+	//Actual: max(0, 0, 1) = 1
 	@Test public void t44() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -695,6 +742,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, 1, -1) = -1
+	//Actual: max(0, 1, -1) = 1
 	@Test public void t48() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -723,6 +773,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, 1, 0) = 0
+	//Actual: max(0, 1, 0) = 1
 	@Test public void t50() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -751,6 +804,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(0, 1, 1) = 0
+	//Actual: max(0, 1, 1) = 1
 	@Test public void t52() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
@@ -919,6 +975,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, -1, -1) = -1
+	//Actual: max(1, -1, -1) = 1
 	@Test public void t64() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -947,6 +1006,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, -1, 0) = -1
+	//Actual: max(1, -1, 0) = 1
 	@Test public void t66() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -975,6 +1037,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, -1, 1) = -1
+	//Actual: max(1, -1, 1) = 1
 	@Test public void t68() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -1031,6 +1096,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, 0, -1) = -1
+	//Actual: max(1, 0, -1) = 1
 	@Test public void t72() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -1059,6 +1127,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, 0, 0) = 0
+	//Actual: max(1, 0, 0) = 1
 	@Test public void t74() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -1087,6 +1158,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, 0, 1) = 0
+	//Actual: max(1, 0, 1) = 1
 	@Test public void t76() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -1143,6 +1217,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, 1, -1) = -1
+	//Actual: max(1, 1, -1) = 1
 	@Test public void t80() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -1171,6 +1248,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, 1, 0) = 0
+	//Actual: max(1, 1, 0) = 1
 	@Test public void t82() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
@@ -1199,6 +1279,9 @@ public class MinWebTestSuite {
 		wd.navigate().refresh();
 	}
 
+	//Comparison Failure
+	//Expected: min(1, 1, 1) = 1
+	//Actual: max(1, 1, 1) = 1
 	@Test public void t84() {
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("1");
