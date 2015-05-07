@@ -20,7 +20,7 @@ public class MinWebTestSuite {
 	@BeforeClass public static void setup()
 	{
 		wd = new FirefoxDriver();
-		wd.get("file:///Users/Lucifer/Documents/Development/workspace/software_testing/src/pset6/min.html");
+		wd.get("file:///Users/Lucifer/Documents/Development/workspace/software_testing/src/pset6/minandmax.html");
 	}
 
 	@Test public void t0() {
